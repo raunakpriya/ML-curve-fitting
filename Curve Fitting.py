@@ -25,12 +25,15 @@ p0(x_test)
 z3=np.polyfit(x_train, y_train, 3)
 p3=np.poly1d(z3)
 p3(x_test)
+
 z5=np.polyfit(x_train, y_train, 5)
 p5=np.poly1d(z5)
 p5(x_test)
-z5=np.polyfit(x_train, y_train, 5)
-p5=np.poly1d(z5)
-p5(x_test)
+
+z9=np.polyfit(x_train, y_train, 9)
+p9=np.poly1d(z9)
+p9(x_test)
+
 plt.scatter(x_train, y_train)
 plt.scatter(x_train, y_train)
 plt.plot(x_train,p0(x_train))
